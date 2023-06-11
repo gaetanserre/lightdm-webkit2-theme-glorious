@@ -31,7 +31,7 @@ class Accounts {
 	}
 
 	_setUserNameLabel(name) {
-		this._labelUserName.innerText = name;
+		this._labelUserName.innerText = "Gaëtan";
 	}
 
 	_updateAccountDefault(button) {
@@ -107,8 +107,6 @@ class Accounts {
 	}
 
 	_populateAccountsList() {
-		console.log("Users", this._usersObject);
-		//console.log("Users", lightdm.users); // This should be the same as above
 		for (let i = 0; i < this._usersObject.length; i++){
 			let userObject = {
 				'button': document.createElement('button'),
